@@ -1,3 +1,17 @@
+# This fork adds hasBody attribute to actions
+
+The `hasBody` attribute can be used to force angularjs to include a http body in the given request.
+
+```javascript
+var res = $resource(
+      '/example',{},{
+        login:{
+          method:'LOGIN',
+	  hasBody: true
+        }
+      });
+```
+
 # packaged angular-resource
 
 This repo is for distribution on `npm` and `bower`. The source for this module is in the
